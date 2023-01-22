@@ -1,15 +1,9 @@
 /node_modules
 /public/build
 /public/hot
-/public/New folder
-/public/Images
-/public/css
-/public/js
-/public/demos
-/public/sass
-/public/preview
-/public/one-page
-/public/include
+/public/common
+
+
 
 /public/storage
 /storage/*.key

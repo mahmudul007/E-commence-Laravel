@@ -1,4 +1,10 @@
-@extends('layouts.app')
+
+
+@extends('layouts.app_layouts')
+
+@section('title')
+Super Shop
+@endsection
 
 @section('content')
 <div class="container">
