@@ -199,10 +199,10 @@
                         <!-- Logo
                             ============================================= -->
                         <div id="logo" class="me-lg-4">
-                            <a href="demo-shop.html" class="standard-logo"><img src="common/images/super-shop.png"
-                                    alt="Canvas Logo"></a>
-                            <a href="demo-shop.html" class="retina-logo"><img src="common/images/super-shop.png"
-                                    alt="Canvas Logo"></a>
+                            <a href="demo-shop.html" class="standard-logo"><img src="{{asset('common/images/super-shop.png')}}"
+                                    alt="super-shop Logo"></a>
+                            <a href="demo-shop.html" class="retina-logo"><img src="{{asset('common/images/super-shop.png')}}"
+                                    alt="super-shop Logo"></a>
                         </div><!-- #logo end -->
 
                         <div class="header-misc">
@@ -222,6 +222,11 @@
                                                 data-bs-toggle="dropdown">{{ Auth::user()->name }}</a>
                                             <div class="dropdown-menu fade-down m-0">
                                                 <a href="#" class="dropdown-item">Orders</a>
+                                                @if (Auth::user()->type == 'admin')
+                                                <a href="{{ route('admin.home') }}" class="dropdown-item">Admin Panel</a>
+                                               @elseif (Auth::user()->type == 'manager')
+                                                <a href="#" class="dropdown-item">Moderator</a>
+                                                @endif
                         
                                             
                                                 <a href="#" class="dropdown-item"

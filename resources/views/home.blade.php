@@ -1,5 +1,3 @@
-
-
 @extends('layouts.app_layouts')
 
 @section('title')
