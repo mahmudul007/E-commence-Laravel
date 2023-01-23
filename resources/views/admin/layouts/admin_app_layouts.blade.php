@@ -11,14 +11,14 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
                 <!-- App favicon -->
-                <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
+                <link rel="shortcut icon" href="{{asset('admin/assets/images/favicon.ico')}}">
 
        
 
          <!-- App css -->
-         <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
-         <link href="{{asset('assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
-         <link href="{{asset('assets/css/app.min.css')}}" rel="stylesheet" type="text/css" />
+         <link href="{{asset('admin/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+         <link href="{{asset('admin/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+         <link href="{{asset('admin/assets/css/app.min.css')}}" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -28,7 +28,7 @@
             <div class="main-icon-menu">
                 <a href="index.html" class="logo logo-metrica d-block text-center">
                     <span>
-                        <img src="{{asset('assets/images/logo-sm.png')}}" alt="logo-small" class="logo-sm">
+                        <img src="{{asset('admin/assets/images/logo-sm.png')}}" alt="logo-small" class="logo-sm">
                     </span>
                 </a>
                 <div class="main-icon-menu-body">
@@ -67,7 +67,7 @@
                 </div><!--end main-icon-menu-body-->
                 <div class="pro-metrica-end">
                     <a href="" class="profile">
-                        <img src="assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle thumb-sm">
+                        <img src="admin/assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle thumb-sm">
                     </a>
                 </div><!--end pro-metrica-end-->
             </div>
@@ -78,8 +78,8 @@
                 <div class="topbar-left">
                     <a href="index.html" class="logo">
                         <span>
-                            <img src="{{asset('assets/images/logo-dark.png')}}" alt="logo-large" class="logo-lg logo-dark">
-                            <img src="{{asset('assets/images/logo.png')}}" alt="logo-large" class="logo-lg logo-light">
+                            <img src="{{asset('admin/assets/images/logo-dark.png')}}" alt="logo-large" class="logo-lg logo-dark">
+                            <img src="{{asset('admin/assets/images/logo.png')}}" alt="logo-large" class="logo-lg logo-light">
                         </span>
                     </a><!--end logo-->
                 </div><!--end topbar-left-->
@@ -831,7 +831,7 @@
                                     <small class="float-end text-muted ps-2">2 min ago</small>
                                     <div class="media">
                                         <div class="avatar-md bg-soft-primary">
-                                            <img src="assets/images/users/user-1.jpg" alt="" class="thumb-sm rounded-circle">
+                                            <img src="admin/assets/images/users/user-1.jpg" alt="" class="thumb-sm rounded-circle">
                                         </div>
                                         <div class="media-body align-self-center ms-2 text-truncate">
                                             <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
@@ -887,7 +887,7 @@
                         <a class="nav-link dropdown-toggle nav-user" data-bs-toggle="dropdown" href="#" role="button"
                             aria-haspopup="false" aria-expanded="false">
                             <div class="d-flex align-items-center">
-                                <img src="{{asset('assets/images/users/user-4.jpg')}}" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
+                                <img src="{{asset('admin/assets/images/users/user-4.jpg')}}" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
                                 <div>
                                     <small class="d-none d-md-block font-11">Admin</small>
                                     <span class="d-none d-md-block fw-semibold font-12">{{Auth::user()->name}} <i
@@ -1005,14 +1005,14 @@
         <!-- Javascript  -->  
         <!-- vendor js -->
         
-        <script src="{{asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-        <script src="{{asset('assets/libs/simplebar/simplebar.min.js')}}"></script>
-        <script src="{{asset('assets/libs/feather-icons/feather.min.js')}}"></script>
+        <script src="{{asset('admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset('admin/assets/libs/simplebar/simplebar.min.js')}}"></script>
+        <script src="{{asset('admin/assets/libs/feather-icons/feather.min.js')}}"></script>
 
-        <script src="{{asset('assets/libs/apexcharts/apexcharts.min.js')}}"></script>
-        <script src="{{asset('assets/js/pages/analytics-index.init.js')}}"></script>
+        <script src="{{asset('admin/assets/libs/apexcharts/apexcharts.min.js')}}"></script>
+        <script src="{{asset('admin/assets/js/pages/analytics-index.init.js')}}"></script>
         <!-- App js -->
-        <script src="{{asset('assets/js/app.js')}}"></script>
+        <script src="{{asset('admin/assets/js/app.js')}}"></script>
 
     </body>
     <!--end body-->
