@@ -11,14 +11,14 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
                 <!-- App favicon -->
-                <link rel="shortcut icon" href="assets/images/favicon.ico">
+                <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
 
        
 
          <!-- App css -->
          <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
-         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-         <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+         <link href="{{asset('assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+         <link href="{{asset('assets/css/app.min.css')}}" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -28,7 +28,7 @@
             <div class="main-icon-menu">
                 <a href="index.html" class="logo logo-metrica d-block text-center">
                     <span>
-                        <img src="assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                        <img src="{{asset('assets/images/logo-sm.png')}}" alt="logo-small" class="logo-sm">
                     </span>
                 </a>
                 <div class="main-icon-menu-body">
@@ -78,8 +78,8 @@
                 <div class="topbar-left">
                     <a href="index.html" class="logo">
                         <span>
-                            <img src="assets/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark">
-                            <img src="assets/images/logo.png" alt="logo-large" class="logo-lg logo-light">
+                            <img src="{{asset('assets/images/logo-dark.png')}}" alt="logo-large" class="logo-lg logo-dark">
+                            <img src="{{asset('assets/images/logo.png')}}" alt="logo-large" class="logo-lg logo-light">
                         </span>
                     </a><!--end logo-->
                 </div><!--end topbar-left-->
@@ -813,18 +813,7 @@
             <!-- Navbar -->
             <nav class="navbar-custom" id="navbar-custom">    
                 <ul class="list-unstyled topbar-nav float-end mb-0">
-                    <li class="dropdown">
-                        <a class="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="false" aria-expanded="false">
-                        <img src="assets/images/flags/us_flag.jpg" alt="" class="thumb-xxs rounded-circle">
-                    </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#"><img src="assets/images/flags/us_flag.jpg" alt="" height="15" class="me-2">English</a>
-                            <a class="dropdown-item" href="#"><img src="assets/images/flags/spain_flag.jpg" alt="" height="15" class="me-2">Spanish</a>
-                            <a class="dropdown-item" href="#"><img src="assets/images/flags/germany_flag.jpg" alt="" height="15" class="me-2">German</a>
-                            <a class="dropdown-item" href="#"><img src="assets/images/flags/french_flag.jpg" alt="" height="15" class="me-2">French</a>
-                        </div>
-                    </li><!--end topbar-language-->
+                 
             
                     <li class="dropdown notification-list">
                         <a class="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown" href="#" role="button"
@@ -850,58 +839,9 @@
                                         </div><!--end media-body-->
                                     </div><!--end media-->
                                 </a><!--end-item-->
-                                <!-- item-->
-                                <a href="#" class="dropdown-item py-3">
-                                    <small class="float-end text-muted ps-2">10 min ago</small>
-                                    <div class="media">
-                                        <div class="avatar-md bg-soft-primary">
-                                            <img src="assets/images/users/user-4.jpg" alt="" class="thumb-sm rounded-circle">
-                                        </div>
-                                        <div class="media-body align-self-center ms-2 text-truncate">
-                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
-                                            <small class="text-muted mb-0">It is a long established fact that a reader.</small>
-                                        </div><!--end media-body-->
-                                    </div><!--end media-->
-                                </a><!--end-item-->
-                                <!-- item-->
-                                <a href="#" class="dropdown-item py-3">
-                                    <small class="float-end text-muted ps-2">40 min ago</small>
-                                    <div class="media">
-                                        <div class="avatar-md bg-soft-primary">
-                                            <img src="assets/images/users/user-2.jpg" alt="" class="thumb-sm rounded-circle">
-                                        </div>
-                                        <div class="media-body align-self-center ms-2 text-truncate">
-                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
-                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
-                                        </div><!--end media-body-->
-                                    </div><!--end media-->
-                                </a><!--end-item-->
-                                <!-- item-->
-                                <a href="#" class="dropdown-item py-3">
-                                    <small class="float-end text-muted ps-2">1 hr ago</small>
-                                    <div class="media">
-                                        <div class="avatar-md bg-soft-primary">
-                                            <img src="assets/images/users/user-5.jpg" alt="" class="thumb-sm rounded-circle">
-                                        </div>
-                                        <div class="media-body align-self-center ms-2 text-truncate">
-                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
-                                            <small class="text-muted mb-0">It is a long established fact that a reader.</small>
-                                        </div><!--end media-body-->
-                                    </div><!--end media-->
-                                </a><!--end-item-->
-                                <!-- item-->
-                                <a href="#" class="dropdown-item py-3">
-                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
-                                    <div class="media">
-                                        <div class="avatar-md bg-soft-primary">
-                                            <img src="assets/images/users/user-3.jpg" alt="" class="thumb-sm rounded-circle">
-                                        </div>
-                                        <div class="media-body align-self-center ms-2 text-truncate">
-                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
-                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
-                                        </div><!--end media-body-->
-                                    </div><!--end media-->
-                                </a><!--end-item-->
+                               
+                       
+                            
                             </div>
                             <!-- All-->
                             <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
@@ -922,59 +862,7 @@
                                 Notifications <span class="badge bg-soft-primary badge-pill">2</span>
                             </h6> 
                             <div class="notification-menu" data-simplebar>
-                                <!-- item-->
-                                <a href="#" class="dropdown-item py-3">
-                                    <small class="float-end text-muted ps-2">2 min ago</small>
-                                    <div class="media">
-                                        <div class="avatar-md bg-soft-primary">
-                                            <i class="ti ti-chart-arcs"></i>
-                                        </div>
-                                        <div class="media-body align-self-center ms-2 text-truncate">
-                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
-                                            <small class="text-muted mb-0">Dummy text of the printing and industry.</small>
-                                        </div><!--end media-body-->
-                                    </div><!--end media-->
-                                </a><!--end-item-->
-                                <!-- item-->
-                                <a href="#" class="dropdown-item py-3">
-                                    <small class="float-end text-muted ps-2">10 min ago</small>
-                                    <div class="media">
-                                        <div class="avatar-md bg-soft-primary">
-                                            <i class="ti ti-device-computer-camera"></i>
-                                        </div>
-                                        <div class="media-body align-self-center ms-2 text-truncate">
-                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
-                                            <small class="text-muted mb-0">It is a long established fact that a reader.</small>
-                                        </div><!--end media-body-->
-                                    </div><!--end media-->
-                                </a><!--end-item-->
-                                <!-- item-->
-                                <a href="#" class="dropdown-item py-3">
-                                    <small class="float-end text-muted ps-2">40 min ago</small>
-                                    <div class="media">
-                                        <div class="avatar-md bg-soft-primary">                                                    
-                                            <i class="ti ti-diamond"></i>
-                                        </div>
-                                        <div class="media-body align-self-center ms-2 text-truncate">
-                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
-                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
-                                        </div><!--end media-body-->
-                                    </div><!--end media-->
-                                </a><!--end-item-->
-                                <!-- item-->
-                                <a href="#" class="dropdown-item py-3">
-                                    <small class="float-end text-muted ps-2">1 hr ago</small>
-                                    <div class="media">
-                                        <div class="avatar-md bg-soft-primary">
-                                            <i class="ti ti-drone"></i>
-                                        </div>
-                                        <div class="media-body align-self-center ms-2 text-truncate">
-                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
-                                            <small class="text-muted mb-0">It is a long established fact that a reader.</small>
-                                        </div><!--end media-body-->
-                                    </div><!--end media-->
-                                </a><!--end-item-->
-                                <!-- item-->
+                            
                                 <a href="#" class="dropdown-item py-3">
                                     <small class="float-end text-muted ps-2">2 hrs ago</small>
                                     <div class="media">
@@ -999,10 +887,10 @@
                         <a class="nav-link dropdown-toggle nav-user" data-bs-toggle="dropdown" href="#" role="button"
                             aria-haspopup="false" aria-expanded="false">
                             <div class="d-flex align-items-center">
-                                <img src="assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
+                                <img src="{{asset('assets/images/users/user-4.jpg')}}" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
                                 <div>
                                     <small class="d-none d-md-block font-11">Admin</small>
-                                    <span class="d-none d-md-block fw-semibold font-12">Maria Gibson <i
+                                    <span class="d-none d-md-block fw-semibold font-12">{{Auth::user()->name}} <i
                                             class="mdi mdi-chevron-down"></i></span>
                                 </div>
                             </div>
@@ -1011,8 +899,14 @@
                             <a class="dropdown-item" href="#"><i class="ti ti-user font-16 me-1 align-text-bottom"></i> Profile</a>
                             <a class="dropdown-item" href="#"><i class="ti ti-settings font-16 me-1 align-text-bottom"></i> Settings</a>
                             <div class="dropdown-divider mb-0"></div>
-                            <a class="dropdown-item" href="#"><i class="ti ti-power font-16 me-1 align-text-bottom"></i> Logout</a>
+                            <a class="dropdown-item"  onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();" href="#"><i class="ti ti-power font-16 me-1 align-text-bottom"></i> Logout</a>
                         </div>
+                        
+                        <form id="logout-form"
+                        action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                        </form>
                     </li><!--end topbar-profile-->
                     <li class="notification-list">
                         <a class="nav-link arrow-none nav-icon offcanvas-btn" href="#" data-bs-toggle="offcanvas" data-bs-target="#Appearance" role="button" aria-controls="Rightbar">
@@ -1052,7 +946,7 @@
 
                 <!--Start Rightbar-->
                 <!--Start Rightbar/offcanvas-->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="Appearance" aria-labelledby="AppearanceLabel">
+                {{-- <div class="offcanvas offcanvas-end" tabindex="-1" id="Appearance" aria-labelledby="AppearanceLabel">
                     <div class="offcanvas-header border-bottom">
                       <h5 class="m-0 font-14" id="AppearanceLabel">Appearance</h5>
                       <button type="button" class="btn-close text-reset p-0 m-0 align-self-center" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1089,7 +983,7 @@
                             </div><!--end form-switch-->
                         </div><!--end /div-->               
                     </div><!--end offcanvas-body-->
-                </div>
+                </div> --}}
                 <!--end Rightbar/offcanvas-->
                  <!--end Rightbar-->
                  
@@ -1111,14 +1005,14 @@
         <!-- Javascript  -->  
         <!-- vendor js -->
         
-        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="{{asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset('assets/libs/simplebar/simplebar.min.js')}}"></script>
+        <script src="{{asset('assets/libs/feather-icons/feather.min.js')}}"></script>
 
-        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
-        <script src="assets/js/pages/analytics-index.init.js"></script>
+        <script src="{{asset('assets/libs/apexcharts/apexcharts.min.js')}}"></script>
+        <script src="{{asset('assets/js/pages/analytics-index.init.js')}}"></script>
         <!-- App js -->
-        <script src="assets/js/app.js"></script>
+        <script src="{{asset('assets/js/app.js')}}"></script>
 
     </body>
     <!--end body-->
