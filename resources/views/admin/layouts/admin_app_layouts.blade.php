@@ -4,7 +4,7 @@
         
 
         <meta charset="utf-8" />
-                <title>Metrica - Admin & Dashboard Template</title>
+                <title>Ecommerce</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
                 <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
                 <meta content="" name="author" />
@@ -992,8 +992,44 @@
                 <footer class="footer text-center text-sm-start">
                     &copy; <script>
                         document.write(new Date().getFullYear())
-                    </script> Metrica <span class="text-muted d-none d-sm-inline-block float-end">Crafted with <i
-                            class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+                    </script> Admin <span class="text-muted d-none d-sm-inline-block float-end">Crafted  <i
+                            class="mdi mdi-heart text-danger"></i> by Mahmudul</span>
+                           
+                            <div>
+                               <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "103809822623955");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+                                
+
+                            </div>
+
                 </footer>
                 <!-- end Footer -->                
                 <!--end footer-->
@@ -1001,9 +1037,11 @@
             <!-- end page content -->
         </div>
         <!-- end page-wrapper -->
+        
 
         <!-- Javascript  -->  
         <!-- vendor js -->
+      
         
         <script src="{{asset('admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('admin/assets/libs/simplebar/simplebar.min.js')}}"></script>
@@ -1013,6 +1051,7 @@
         <script src="{{asset('admin/assets/js/pages/analytics-index.init.js')}}"></script>
         <!-- App js -->
         <script src="{{asset('admin/assets/js/app.js')}}"></script>
+        @yield('script')
 
     </body>
     <!--end body-->

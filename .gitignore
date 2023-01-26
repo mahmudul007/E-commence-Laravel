@@ -2,7 +2,10 @@
 /public/build
 /public/hot
 /public/common
-/public/admin
+/public/admin/assets/libs
+/public/admin/assets/fonts
+/public/admin/assets/css
+/public/admin/assets/images
 
 
 
