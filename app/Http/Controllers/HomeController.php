@@ -29,6 +29,10 @@ class HomeController extends Controller
     {
         return view('admin.adminHome');
     }
+    public function test()
+    {
+        return view('admin.top');
+    }
   
     /**
      * Show the application dashboard.

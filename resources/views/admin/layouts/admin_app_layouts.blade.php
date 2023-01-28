@@ -13,7 +13,7 @@
                 <!-- App favicon -->
                 <link rel="shortcut icon" href="{{asset('admin/assets/images/favicon.ico')}}">
 
-       
+       @yield('css')
 
          <!-- App css -->
          <link href="{{asset('admin/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
@@ -26,7 +26,7 @@
         <!-- leftbar-tab-menu -->
         <div class="leftbar-tab-menu">
             <div class="main-icon-menu">
-                <a href="index.html" class="logo logo-metrica d-block text-center">
+                <a href="{{route('admin.home')}}" class="logo logo-metrica d-block text-center">
                     <span>
                         <img src="{{asset('admin/assets/images/logo-sm.png')}}" alt="logo-small" class="logo-sm">
                     </span>
@@ -76,7 +76,7 @@
             <div class="main-menu-inner">
                 <!-- LOGO -->
                 <div class="topbar-left">
-                    <a href="index.html" class="logo">
+                    <a href="{{route('admin.home')}}" class="logo">
                         <span>
                             <img src="{{asset('admin/assets/images/logo-dark.png')}}" alt="logo-large" class="logo-lg logo-dark">
                             <img src="{{asset('admin/assets/images/logo.png')}}" alt="logo-large" class="logo-lg logo-light">
@@ -93,26 +93,9 @@
 
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Analytics</a>
+                                <a class="nav-link" href="{{route('admin.home')}}">Analytics</a>
                             </li><!--end nav-item-->
-                            <li class="nav-item">
-                                <a class="nav-link" href="crypto-index.html">Crypto</a>
-                            </li><!--end nav-item-->
-                            <li class="nav-item">
-                                <a class="nav-link" href="crm-index.html">CRM</a>
-                            </li><!--end nav-item-->
-                            <li class="nav-item">
-                                <a class="nav-link" href="projects-index.html">Project</a>
-                            </li><!--end nav-item-->
-                            <li class="nav-item">
-                                <a class="nav-link" href="ecommerce-index.html">Ecommerce</a>
-                            </li><!--end nav-item-->
-                            <li class="nav-item">
-                                <a class="nav-link" href="helpdesk-index.html">Helpdesk</a>
-                            </li><!--end nav-item-->
-                            <li class="nav-item">
-                                <a class="nav-link" href="hospital-index.html">Hospital</a>
-                            </li><!--end nav-item-->
+                           
                         </ul><!--end nav-->
                     </div><!-- end Dashboards -->
 

@@ -52,3 +52,6 @@ All Admin Routes List
 //     Route::get('/manager/home', [HomeController::class, 'managerHome'])->name('manager.home');
 // });
 // Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/test/s/', [HomeController::class, 'test'])->name('test');
+
