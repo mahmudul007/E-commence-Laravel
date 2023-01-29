@@ -70,7 +70,17 @@ Super Shop
                                 @endif
                             </div>
                         </div>
+
                     </form>
+                    <div class="row mb-0">
+                        <div class="col-md-6 offset-md-4">
+                            <a href="{{route('google.login')}}"
+                            class="button button-large w-100 si-colored  si-google nott fw-normal ls0 center m-0"><i
+                                class="icon-google"></i> Log in with Google</a>
+                        </div>
+                      
+                    </div>
+                  
                 </div>
             </div>
         </div>

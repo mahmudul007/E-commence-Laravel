@@ -8,6 +8,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Casts\Attribute;
+use Carbon\Carbon;
+use App\Models\Image;
+
   
 class User extends Authenticatable
 {
@@ -23,8 +26,18 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'type'
+        'type',
+        'google_id',
+        'email_verified_at'
+
     ];
+
+public function getProfile(){
+    return $this->hasOne(Image::class, 'ref_id')
+            ->where('table', '=', $this->table)
+            ->where('tag', 'profile');
+}
+
   
     /**
      * The attributes that should be hidden for serialization.

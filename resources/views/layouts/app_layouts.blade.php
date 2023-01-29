@@ -58,9 +58,9 @@
                 </div>
                 <div class="card-body mx-auto py-5" style="max-width: 70%;">
 
-                    <a href="#"
-                        class="button button-large w-100 si-colored si-facebook nott fw-normal ls0 center m-0"><i
-                            class="icon-facebook-sign"></i> Log in with Facebook</a>
+                    <a href="{{route('google.login')}}"
+                        class="button button-large w-100 si-colored  si-google nott fw-normal ls0 center m-0"><i
+                            class="icon-google"></i> Log in with Google</a>
 
                     <div class="divider divider-center"><span class="position-relative" style="top: -2px">OR</span>
                     </div>
@@ -217,9 +217,19 @@
 
                                         @else
 
-                                        <div class=" bg-primary py-2 rounded-pill px-lg-5  nav-item dropdown">
-                                            <a href="#" style="color: white" class="nav-link dropdown-toggle"
-                                                data-bs-toggle="dropdown">{{ Auth::user()->name }}</a>
+                                        <div class=" nav-item dropdown">
+                                            @if (empty(Auth::user()->getProfile->link))
+                                            <a href="#" style="color: white" class="nav-link dropdown-toggle bg-primary py-2 rounded-pill px-lg-5  "
+                                                data-bs-toggle="dropdown">
+                                               
+                                                {{ Auth::user()->name }}
+                                            </a>
+                                            @else
+                                            <a href="" data-bs-toggle="dropdown">  <img style="height: 54px;width:54px" class="rounded-circle"
+                                                 src="{{Auth::user()->getProfile->link}}" alt="">  </a>
+                                          
+                                            @endif
+
                                             <div class="dropdown-menu fade-down m-0">
                                                 <a href="#" class="dropdown-item">Orders</a>
                                                 @if (Auth::user()->type == 'admin')

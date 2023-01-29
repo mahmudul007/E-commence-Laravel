@@ -57,7 +57,13 @@
                 </div><!--end main-icon-menu-body-->
                 <div class="pro-metrica-end">
                     <a href="" class="profile">
+                       @if (empty(Auth::user()->getProfile->link))
                         <img src="{{asset('admin/assets/images/users/user-4.jpg')}}" alt="profile-user" class="rounded-circle thumb-sm">
+                           
+                       @else
+                        <img src="{{Auth::user()->getProfile->link}}" alt="profile-user" class="rounded-circle thumb-sm">
+                           
+                       @endif 
                     </a>
                 </div><!--end pro-metrica-end-->
             </div>
@@ -252,7 +258,13 @@
                         <a class="nav-link dropdown-toggle nav-user" data-bs-toggle="dropdown" href="#" role="button"
                             aria-haspopup="false" aria-expanded="false">
                             <div class="d-flex align-items-center">
+                                @if (empty(Auth::user()->getProfile->link))
                                 <img src="{{asset('admin/assets/images/users/user-4.jpg')}}" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
+                                    
+                                @else
+                                <img src="{{Auth::user()->getProfile->link}}" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
+                                    
+                                @endif
                                 <div>
                                     <small class="d-none d-md-block font-11">Admin</small>
                                     <span class="d-none d-md-block fw-semibold font-12">{{Auth::user()->name}} <i
