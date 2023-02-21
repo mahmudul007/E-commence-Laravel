@@ -12,12 +12,17 @@ return new class extends Migration
      * @return void
      */
     public function up()
-    {
-        Schema::table('products', function($table) {
-            $table->string('size')->nullable()->default(null);
-           
-        });
-    }
+{
+    Schema::create('categories', function (Blueprint $table) {
+           $table->id();
+    $table->string('category_name');
+    $table->unsignedBigInteger('parent_id')->nullable();
+    $table->foreign('parent_id')->references('id')->on('categories')->onDelete('cascade');
+    $table->timestamps();
+    });
+
+    
+}
 
     /**
      * Reverse the migrations.
@@ -26,9 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('products', function($table) {
-            $table->dropColumn('size');
-          
-        });
+        Schema::dropIfExists('categories');
     }
 };

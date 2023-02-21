@@ -25,6 +25,11 @@ return new class extends Migration
             $table->bigInteger('quantity');
             $table->boolean('product_live')->default(false);
             $table->boolean('unlimited_stock')->nullable()->default(false);
+            $table->string('colors')->nullable()->default(null);
+            $table->decimal('discount_percentage')->nullable()->default(null);
+            $table->boolean('is_discount_active')->default(false);
+            $table->string('size')->nullable()->default(null);
+
             $table->timestamps();
 
 
