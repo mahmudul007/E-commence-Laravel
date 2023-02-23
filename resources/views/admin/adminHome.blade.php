@@ -290,16 +290,20 @@ Admin Home
         </div><!--end card--> 
     </div> <!--end col-->
 </div><!--end row-->
-<script>
+@section('script')
+
     var visitorArray = @json(array_column($analytics['date_vs_visits'], 'visits'));
     var browseArray = @json(array_column($analytics['date_vs_visits'], 'browse'));
     var chartDateArray = @json(array_column($analytics['date_vs_visits'], 'date'));
 
     var mobileVsDesktopX = ['Mobile', 'Desktop'];
     var mobileVsDesktopY = [{{ $analytics['mobile_visitors'] }}, {{ $analytics['desktop_visitors'] }}];
-    console.log(visitorArray);
-    console.log(browseArray);
-</script>
+   
+@endsection
+
+
+
+
 @endsection
 
 
