@@ -418,7 +418,7 @@
 
         <!-- Javascript  -->  
         <!-- vendor js -->
-      
+           @yield('script')
         
         <script src="{{asset('admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('admin/assets/libs/simplebar/simplebar.min.js')}}"></script>
@@ -428,7 +428,7 @@
         <script src="{{asset('admin/assets/js/pages/analytics-index.init.js')}}"></script>
         <!-- App js -->
         <script src="{{asset('admin/assets/js/app.js')}}"></script>
-        @yield('script')
+   
 
     </body>
     <!--end body-->
