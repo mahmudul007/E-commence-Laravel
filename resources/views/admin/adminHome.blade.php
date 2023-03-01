@@ -2,28 +2,10 @@
 
 @section('content')
     <!-- Page-Title -->
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="page-title-box">
-                <div class="float-end">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Admin</a>
-                        </li>
-                        <!--end nav-item-->
-                        <li class="breadcrumb-item"><a href="#">Analytics</a>
-                        </li>
-                        <!--end nav-item-->
-                        <li class="breadcrumb-item active">Visitors</li>
-                    </ol>
-                </div>
-                <h4 class="page-title">Visitors</h4>
-            </div>
-            <!--end page-title-box-->
-        </div>
-        <!--end col-->
-    </div>
+    @section('title') Visitor
+    @endsection
     <!-- end page title end breadcrumb -->
-    <!-- end page title end breadcrumb -->
+   
     <div class="row">
         <div class="col-lg-9">
             <div class="row justify-content-center">

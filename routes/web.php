@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\admin\AnalyticsController;
+use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\Auth\SocialAuthController;
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +43,13 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
   
     Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
     Route::get('/admin/home', [AnalyticsController::class, 'visitors'])->name('admin.home');
+    #product management
+
+    Route::get('/product/category/create/view', [CategoryController::class, 'create_view'])->name('category.create.view');
+    Route::post('/product/category/create/', [CategoryController::class, 'create'])->name('category.create');
+    Route::get('/product/category/list/', [CategoryController::class, 'all'])->name('category.list');
+
+
 });
   
 /*------------------------------------------
