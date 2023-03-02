@@ -169,7 +169,7 @@
                                         </li>
                                         <!--end nav-item-->
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Category List</a>
+                                            <a class="nav-link" href="{{route('category.list')}}">Category List</a>
                                         </li>
                                         <!--end nav-item-->
                                         
