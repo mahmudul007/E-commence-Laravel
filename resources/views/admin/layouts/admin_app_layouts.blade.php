@@ -323,8 +323,8 @@
                         </div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#"><i
-                                class="ti ti-user font-16 me-1 align-text-bottom"></i> Profile</a>
+                        <a class="dropdown-item" href="{{route('home')}}"><i
+                                class="ti ti-user font-16 me-1 align-text-bottom"></i> Home</a>
                         <a class="dropdown-item" href="#"><i
                                 class="ti ti-settings font-16 me-1 align-text-bottom"></i> Settings</a>
                         <div class="dropdown-divider mb-0"></div>

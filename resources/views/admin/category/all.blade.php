@@ -7,31 +7,13 @@
 @endsection
 @section('content')
 
-@foreach ($categories as $category)
+{{-- @foreach ($categories as $category)
 
-<x-category-item:category='$category'/>
-<div>
-    {{$category->category_name}}( {{$category->id}})
+<x-category-item:category="$category"/>
 
-    @foreach ( $category->children as $child)
-    <div class="mx-5">
-       {{$child->id}} {{$child->category_name}} {{$child->parent_id}}
-        @foreach ($child->children as $subchild)
-        <div class="mx-5">
-            {{$subchild->category_name}} {{$subchild->parent_id}}
-    
-        </div>
-        @endforeach
-
-    </div>
-  
-        
-    @endforeach
-
-</div>
 
     
-@endforeach
+@endforeach --}}
 
 <div class="row">
   
