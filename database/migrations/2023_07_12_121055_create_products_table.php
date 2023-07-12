@@ -19,23 +19,23 @@ return new class extends Migration
             $table->string('sku');
             $table->decimal('price');
             $table->string('weight')->nullable();
-            $table->unsignedBigInteger('brand_id');
-            $table->unsignedBigInteger('catagory_id');
+            $table->unsignedBigInteger('brand_id')->nullable();
+            $table->unsignedBigInteger('catagory_id')->nullable();
             $table->longText('description');
             $table->bigInteger('quantity');
             $table->boolean('product_live')->default(false);
             $table->boolean('unlimited_stock')->nullable()->default(false);
-            $table->string('colors')->nullable()->default(null);       
+            $table->string('colors')->nullable()->default(null);
             $table->string('size')->nullable()->default(null);
             $table->timestamps();
 
 
             $table->foreign('catagory_id')
             ->references('id')->on('categories')
-            ->onDelete('cascade');
+            ->onDelete('set null ');
             $table->foreign('brand_id')
             ->references('id')->on('brands')
-            ->onDelete('cascade');
+            ->onDelete('set null');
         });
     }
 

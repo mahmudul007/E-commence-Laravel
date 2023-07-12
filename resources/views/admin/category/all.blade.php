@@ -9,7 +9,7 @@
 
 @foreach ($categories as $category)
 
-<x-category-item:category='$category'/>
+{{-- <x-category-item:category='$category'/> --}}
 <div>
     {{$category->category_name}}( {{$category->id}})
 

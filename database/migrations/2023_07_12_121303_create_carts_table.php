@@ -13,19 +13,22 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('discounts', function (Blueprint $table) {
+        Schema::create('carts', function (Blueprint $table) {
             $table->id();
-            $table->string('discount_name');         
-            $table->decimal('percentage', 5, 2);
-            $table->date('start_date');
-            $table->date('end_date');
-            $table->boolean('is_active');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('product_id');
+            $table->integer('quantity');
+            $table->timestamps();
 
             $table->foreign('product_id')
             ->references('id')->on('products')
             ->onDelete('cascade');
-            $table->timestamps();
+
+            $table->foreign('user_id')
+            ->references('id')->on('users')
+            ->onDelete('cascade');
+
+
         });
     }
 
@@ -36,6 +39,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('discounts');
+        Schema::dropIfExists('carts');
     }
 };
